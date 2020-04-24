@@ -1,0 +1,11 @@
+<div class="center">
+	<div *ngIf="errors">{{stringify(errors)}}</div>
+  <h1>Login Assistance Page. TryNo: {{failed_login}}</h1>
+  <!--<h1><a href="http://localhost:4200/login/?execution={{execution}}&client_id={{client_id}}&redirect_uri={{redirect_uri}}">Signin</a></h1>-->
+	<div *ngIf="animes">
+		<h2>Isekai Anime</h2>
+		<ul>
+			<li *ngFor="let anime of animes">{{anime}}</li>
+		</ul>
+	</div>
+</div>

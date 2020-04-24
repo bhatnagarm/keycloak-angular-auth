@@ -1,0 +1,18 @@
+<div class="center">
+	<div *ngIf="errors">{{stringify(errors)}}</div>
+	<p>This is a public page accessible to anyone.Login_Times:{{app_state}}</p>
+	
+	<form action="{{redirect_uri}}" method="POST">
+		<label for="mobile-number">Mobile Number:</label><br>
+		<input type="text" id="mobile-number" name="mobile-number" value="0410976673"><br>
+		<label for="date-of-birth">Date Of Birth:</label><br>
+		<input type="text" id="date-of-birth" name="date-of-birth" value="1986-05-05"><br><br>
+		<input type="submit" value="Submit">
+	  </form> 
+	<div *ngIf="animes">
+		<h2>Isekai Anime</h2>
+		<ul>
+			<li *ngFor="let anime of animes">{{anime}}</li>
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,24 @@
+<div class="center">
+	<div *ngIf="errors">{{stringify(errors)}}</div>
+	<p>Login First Time for User</p>
+	
+	<form action="{{redirect_uri}}" method="POST">
+		<label for="first-name">First Name:</label><br>
+    	<input type="text" id="first-name" name="first-name" value="Mitul"><br>
+    	<label for="last-name">Last Name:</label><br>
+		<input type="text" id="last-name" name="last-name" value="Bhatnagar"><br>
+		
+		<label for="post-code">Post Code:</label><br>
+		<input type="text" id="post-code" name="post-code" value="1986"><br><br>
+		<label for="sms-code">SMS Code:</label><br>
+		<input type="text" id="sms-code" name="sms-code" value="123456"><br><br>
+		
+		<input type="submit" value="Submit">
+	  </form> 
+	<div *ngIf="animes">
+		<h2>Isekai Anime</h2>
+		<ul>
+			<li *ngFor="let anime of animes">{{anime}}</li>
+		</ul>
+	</div>
+</div>
