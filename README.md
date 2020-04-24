@@ -1,0 +1,2 @@
+##README File for sample Application.
+This is a quick angular application which can has been secured by Keycloak in the backend. It also have some modules with html examples which can be directly called and played around with before creating the templates for Keycloak.
