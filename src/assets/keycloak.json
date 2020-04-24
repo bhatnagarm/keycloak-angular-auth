@@ -1,8 +1,8 @@
 {
-  "realm": "techartworks",
-  "auth-server-url": "http://localhost:8080/auth/",
-  "ssl-required": "external",
-  "resource": "Login_Client",
+  "realm": "master",
+  "auth-server-url": "https://localhost:8443/auth/",
+  "ssl-required": "none",
+  "resource": "OPM_Frontend",
   "public-client": true,
   "confidential-port": 0
 }
